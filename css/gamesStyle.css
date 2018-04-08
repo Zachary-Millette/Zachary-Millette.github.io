@@ -1,0 +1,192 @@
+/*This is the style sheet for the Games page */
+
+/*
+Colors:
+	#f53e00 - Orange
+	#293232 - Dark Grey
+	#5BC0EB - Light Blue
+	#C3423F - Red
+	#8d2297 - Purple
+	#FDE74C - Yellow	
+	
+*/
+
+
+/*Text and body styling===========================================*/
+/*Body style*/
+body{
+	/*Make margins to get elements off the edges of the page*/
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-bottom: 5vh;
+	/*Darken the background for less eye strain*/
+	background-color: #293232;
+	/*Make text white for easy reading*/
+	color: white;
+}
+
+/*Paragraph Style*/
+p{
+	text-indent: 2vw;
+	line-height: 1.5;
+	font-size: 1em;
+}
+
+/*Color of links*/
+a:link,
+a:visited{
+	color: #5BC0EB;
+}
+
+
+/*Slide-show Styling =================================================*/
+/*The currentSlide will have an opacity of one*/
+img.currentSlide{
+	opacity: 1;
+}
+
+/*nav are the arrows used to switch between images in the slide-show*/
+a.nav{
+	cursor: pointer;
+	position: absolute;
+	top: 30%;
+	width: auto;
+	padding: 0.5em;
+	/*color is later defined for each*/
+	/*this is just a default*/
+	color: #5BC0EB;
+	font-weight: bold;
+	font-size: 1.5em;
+	border-radius: 0px 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/*When the arrows are hovered over change the background-color*/
+a.nav:hover{
+	/*background-color is later defined for each*/
+	/*this is just a default*/
+	background-color: #5BC0EB;
+}
+
+/*Move the next arrow to the right*/
+a.next{
+	right: 0;
+}
+
+/*This holds the shared attributes of all the game titles*/
+.title{
+	border-bottom-color: #5BC0EB; /*Default*/
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	width: 40vw;
+	margin: auto;
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+}
+
+/*This holds the shared attributes of descriptions that appear on the left and right side of the screen*/
+.leftDescription,
+.rightDescription{
+	border-top-color: #5BC0EB;	/*Default*/
+	border-bottom-color: #5BC0EB;	/*Default*/
+	border-top-style: solid;
+	border-bottom-style: solid;
+	width: 40vw;
+	position: relative;
+	float: left;
+	margin-bottom: 10vh;
+	text-align: justify;
+}
+.rightDescription{
+	/*Needs to float right*/
+	float: right;
+}
+
+
+/*This is the attributes of the div containing all elements of a slide*/
+.slideShow *{
+	width: 40vw;
+	box-sizing: border-box;
+	position: relative;
+}
+
+/*Attributes for div that holds slide-show images to be displayed*/
+.rightDisplay{
+	position: relative;
+	float: right;
+}
+.leftDisplay{
+	position: relative;
+	float: left;
+}
+
+/*Set slides to be hidden. Only currentSlide should show*/
+.slide{
+	display: none;
+}
+
+/*Thumbs for images selections*/
+.thumb{
+	cursor: pointer;
+	opacity: 0.6;
+	margin-bottom: 5vh;
+}
+
+/*hover over thumb*/
+.thumb:hover{
+	opacity: 1;
+}
+
+.column{
+	float: left;
+	width: 20%;
+}
+
+
+/*Unique attributes to each game ==============================*/
+
+
+/*Project Backfire*/
+#pbTitle,#pbDescription{
+	border-color: #f53e00;
+}
+#pbNext,#pbPrev{color: #000000;}
+#pbNext:hover, #pbPrev:hover{background-color: #f53e00;}
+
+
+/*Project RedTide*/
+#prTitle,#prDescription{
+	border-color: #C3423F;
+}
+#prNext, #prPrev{color: #ffffff;}
+#prNext:hover, #prPrev:hover{background-color: #C3423F;}
+
+
+/*Night Terrors*/
+#ntTitle,#ntDescription{
+	border-color: #8d2297;
+}
+#ntPrev, #ntNext{color: #FDE74C;}
+#ntPrev:hover, #ntNext:hover{background-color: #8d2297;}
+
+
+/*AON*/
+#aonTitle,#aonDescription{
+	border-color: #FDE74C;
+}
+#AONPrev, #AONNext{color: #5BC0EB;}
+#AONPrev:hover, #AONNext:hover{background-color: #FDE74C;}
+
+
+
+
+
+
+
+
+
+
+
+
+

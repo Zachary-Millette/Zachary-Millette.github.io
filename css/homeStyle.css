@@ -1,0 +1,91 @@
+/*This is the CSS file for the indexHome.html file*/
+
+body{
+	margin-right: 5vw;
+	margin-left: 5vw;
+	background-color: #293232;
+}
+
+.homeGamesTitle{
+	font-size: 3em;
+	color: #C3423F;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #C3423F;
+}
+
+.posterContainer{
+	position: relative;
+	float: left;
+	width: 21vw;
+	transition: 0.3s;
+	margin-right: 1vw;
+}
+.posterContainer:hover{
+	cursor: pointer;
+	transform: scale(1.3, 1.3);
+	transition: 0.3s;
+	z-index: 1;
+}
+
+.homePoster{
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: 0.3s;
+}
+
+.posterOverlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.3s;
+	/*Background-color is later defined*/
+	/*this is just a default*/
+	background-color: #f53e00;
+	transition: 0.3s;
+}
+.posterContainer:hover .posterOverlay{
+	opacity: 0.5;
+	transition: 0.3s;
+}
+
+.posterText{
+	color: white;
+	opacity: 0;
+	font-size: 1em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	transition: 0.3s;
+}
+.posterContainer:hover .posterText{
+	opacity: 1;
+	transition: 0.3s;
+}
+
+#pbOverlay{background-color: #f53e00;}
+#prOverlay{background-color: #C3423F;}
+#ntOverlay{background-color: #404E4D;}
+#aonOverlay{background-color: #404E4D;}
+
+
+
+
+
+
+
+
+
+
+
+

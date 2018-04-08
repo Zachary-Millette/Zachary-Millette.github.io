@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<!--
+This HTML page is responsible for navigation.
+It is the top banner that will always be present.
+-->
+
+<script src="js/script.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<!--
+<a id="gamesIndex" href="gamesIndex.html"></a>
+-->
+
+<head>
+	<title>Zachary Millette</title>
+</head>
+
+
+<!--Body of the HTML Page Start ==================================================-->
+<body>
+
+<!--This menu div contains the different tabs that will open each page of the site-->
+<div class="menu">
+	<div class="selections">
+		<a href="homeIndex.html" target="targetFrame"><button class="overlayTab" id="defaultOpen" onclick="openTab(event)">Home</button></a>
+		<a href="gamesIndex.html" target="targetFrame"><button class="overlayTab" onclick="openTab(event)">Games</button></a>
+		<a href="devlogIndex.html" target="targetFrame"><button class="overlayTab" onclick="openTab(event)">DevLog</button></a>
+		<a href="tutsIndex.html" target="targetFrame"><button class="overlayTab" onclick="openTab(event)">Tutorials</button></a>
+		<a href="contactIndex.html" target="targetFrame"><button class="overlayTab" onclick="openTab(event)">Contact</button></a>
+	</div>
+</div>
+
+
+<div id="content">
+	<iframe src="homeIndex.html" name="targetFrame" width="100%" height="100%" overflow="hidden" frameborder="0"></iframe>
+</div>
+
+
+<!--The side nav that will incorporate the game mechanic of the page or canvas will-->
+<!--<div class="sideNav"></div>-->
+<!--
+Triage this for the meantime
+<canvas id="canvas"></canvas>
+-->
+
+</body>
+<!--Body of the HTML Page End ==================================================-->
+
+</html>

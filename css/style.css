@@ -1,0 +1,132 @@
+/*This is the style for the menu at the top of the page*/
+
+body{
+	/*Make margins to get elements off the edges of the page*/
+	margin-left: 0vw;
+	margin-right: 0vw;
+	margin-bottom: 5vh;
+	/*Darken the background for less eye strain*/
+	background-color: #181D1C;
+	/*Make text white for easy reading*/
+	color: white;
+	overflow: hidden;
+}
+
+
+.menu{
+	width: 100%;	/*Occupy the entire width of the screen*/
+	overflow: hidden;	/*Scrollbar should not appear if there is overflow*/
+	background-color: #181D1C;
+	/*Might leave the border out*/
+	border-bottom-style: solid;
+	border-bottom-color: #5BC0EB;
+	border-bottom-width: 1px;
+	position: fixed;	/*Position is fixed so the menu is always visible and at the top of the page*/
+	z-index: 1;	/*Ensure nothing appears on top of the menu*/
+	top: 0; /*No empty space above the menu*/
+	left: 0;	/*No empty space to the left of the menu*/
+}
+
+/*Selections that can be made from the menu*/
+.selections{
+	/*Use margins to keep selections from being against the edge of the page*/
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+.menu button{
+	/*Position set to relative for underline transition*/
+	position: relative;
+	/*text-decoration set to none for underline transition*/
+	text-decoration: none;
+	/*Inherit the background-color so button squares are not visible*/
+	background-color: inherit;
+	color: white;
+	/*1em is 16px*/
+	font-size: 1.2em;
+	float: left;
+	/*border and outline none so button blends with background*/
+	border: none;
+	outline: none;
+	padding: 14px 16px;
+	cursor: pointer;
+	/*brief transition for visual interest*/
+	transition: 0.3s;
+}
+
+/*this is the creation and style of the underline*/
+.menu button:before{
+	/*Has no content*/
+	content: "";
+	/*Position must be absolute to work*/
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 1px;
+	left: 0;
+	/*The line color*/
+	background-color: #5BC0EB;
+	/*Line should be hidden until hovered over*/
+	visibility: hidden;
+	/*Set the scale to 0 and set the transition*/
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+/*Background color when being hovered over*/
+.menu button:hover{
+	background-color: #404E4D;	
+}
+
+/*have the line become visible and scale on hover*/
+button:hover::before{
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+/*Style for the active element*/
+.menu button.active{
+	color: #5BC0EB;
+}
+
+/*Attributes of the content section*/
+#content{
+	margin-top: 6vh;
+	height: 90vh;
+	/*
+	border-style: solid;
+	border-color: red;
+	border-width: 1px;
+	*/
+}
+
+
+/*The side nav that will incorporate the game mechanic of the page or canvas will*/
+/*
+.sideNav{
+	width: 100%;
+	height: 5vh;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	background-color: #404E4D;
+	overflow-x: hidden;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
