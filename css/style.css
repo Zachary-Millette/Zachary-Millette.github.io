@@ -1,15 +1,18 @@
 /*This is the style for the menu at the top of the page*/
 
-body{
-	/*Make margins to get elements off the edges of the page*/
-	margin-left: 0vw;
-	margin-right: 0vw;
-	margin-bottom: 5vh;
-	/*Darken the background for less eye strain*/
+html, body{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	/*
+	margin-bottom: 0;
+	Darken the background for less eye strain
 	background-color: #181D1C;
-	/*Make text white for easy reading*/
+	Make text white for easy reading
 	color: white;
 	overflow: hidden;
+	*/
 }
 
 
@@ -21,7 +24,7 @@ body{
 	border-bottom-style: solid;
 	border-bottom-color: #5BC0EB;
 	border-bottom-width: 1px;
-	position: fixed;	/*Position is fixed so the menu is always visible and at the top of the page*/
+	/*position: fixed;	*//*Position is fixed so the menu is always visible and at the top of the page*/
 	z-index: 1;	/*Ensure nothing appears on top of the menu*/
 	top: 0; /*No empty space above the menu*/
 	left: 0;	/*No empty space to the left of the menu*/
@@ -94,14 +97,13 @@ button:hover::before{
 
 /*Attributes of the content section*/
 #content{
-	margin-top: 6vh;
-	height: 90vh;
-	/*
+	height: 94%;
 	border-style: solid;
 	border-color: red;
-	border-width: 1px;
-	*/
+	padding-bottom: 50px;
 }
+
+
 
 
 /*The side nav that will incorporate the game mechanic of the page or canvas will*/
