@@ -5,6 +5,7 @@ html, body{
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
+	font-family: verdana;
 	/*
 	margin-bottom: 0;
 	Darken the background for less eye strain
@@ -98,8 +99,8 @@ button:hover::before{
 /*Attributes of the content section*/
 #content{
 	height: 94%;
-	border-style: solid;
-	border-color: red;
+	/*border-style: solid;
+	border-color: red;*/
 	padding-bottom: 50px;
 }
 

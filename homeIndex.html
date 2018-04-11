@@ -5,8 +5,7 @@
 This is the html file that will be the homepage of the site
 -->
 
-<!--Comment to commit .PNG to .png change-->
-
+<!--<script src="js/script.js"></script>--><!--Ref needed to change tab color when home selection is made-->
 <script src="js/homeScript.js"></script>
 <link rel="stylesheet" href="css/homeStyle.css">
 
@@ -17,9 +16,10 @@ This is the html file that will be the homepage of the site
 
 <!--The Games part of the Homepage ===================================-->
 <div class="homeSection" id="gamesSection">
-	<h3 class="title"><a href="gamesIndex.html">GAMES</a></h3>
+	<h1 class="title"><a href="gamesIndex.html">GAMES</a></h1>
 	
 	<a href="gamesIndex.html">
+	<!--<button onclick="changePage('games')">-->
 		<div class="posterContainer">
 			<img src="img/BackfirePoster.png" class="homePoster">
 				<div class="posterOverlay" id="pbOverlay"></div>
@@ -43,17 +43,18 @@ This is the html file that will be the homepage of the site
 				<div class="posterOverlay" id="aonOverlay"></div>
 				<div class="posterText">AON</br>Unity 5</div>
 		</div>
+	<!--</button>-->
 	</a>
 </div>
 	
 	
 <!--The Tutorials part of the Homepage ===================================-->
 <div class="homeSection" id="tutsSection">
-	<h3 class="title"><a href="tutsIndex">Tutorials</a></h3>
+	<h1 class="title"><a href="tutsIndex.html">Tutorials</a></h1>
 	
-	<a href="tutsIndex">
+	<a href="tutsIndex.html">
 	<div class="tutContainer">
-		<img src="img/ObjectPoolTut.png" class="tutImg">
+		<img src="img/MadeWithUnity.jpg" class="tutImg">
 		<div class="tutText">
 		<h3>Object Pooling</h3><p>Learn how to use object pooling to optimize your 
 		shooter using C# in Unity 5.</p>

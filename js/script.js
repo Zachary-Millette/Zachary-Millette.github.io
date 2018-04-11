@@ -31,3 +31,24 @@ function openTab(evt){
 	//Set the tab that was selected to be active
 	evt.currentTarget.className += " active";
 }
+
+
+//When the page is changed from one of the home elements the highlighted tab won't change.
+//This function addresses that issue.
+/*
+function changePage(name){
+	
+	switch(name){
+		case 'games':
+			console.log('games');
+			var doc = document.getElementById('gamesTab');
+			if(doc == null){console.log('null');}
+			break;
+		case 'devlog':
+			break;
+		case 'tuts':
+			break;
+	}
+	
+}
+*/

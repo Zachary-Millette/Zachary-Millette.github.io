@@ -3,6 +3,7 @@ html, body{
 	margin: 0;
 	overflow: visible;
 	background-color: #293232;
+	font-family: verdana;
 }
 
 body{
@@ -26,11 +27,11 @@ a{
 
 .title{
 	font-size: 3em;
-	color: #C3423F;
+	color: #5BC0EB;
 	text-align: center;
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
-	border-bottom-color: #C3423F;
+	border-bottom-color: #5BC0EB;
 }
 
 /*Games Section Style =======================*/
@@ -123,7 +124,7 @@ a{
 	position: relative;
 	float: left;
 	width: 27vw;
-	background-color: white;
+	background-color: #1e4766;
 	padding: 0.5vw;
 	margin-right: 1vw;
 	margin-left: 1vw;
@@ -139,6 +140,14 @@ a{
 
 .tutImg{
 	width: 100%;
+}
+
+.tutText{
+	color: #fcfcfc;
+	width: 100%;
+	height: auto;
+	font-size: 2vh;
+	transition: 0.3s;
 }
 
 
