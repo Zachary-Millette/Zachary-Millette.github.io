@@ -12,7 +12,7 @@ var aonSI = 0;
 //When this page loads the following will execute
 window.onload = function(){
 	//console.log(window.parent);
-	window.parent.postMessage('games', 'domain');
+	window.parent.postMessage('games', domain);
 	//Initialize each slide-sshow by calling the respective function
 	showPBSlide(pbSI);
 	showPRSlide(prSI);
