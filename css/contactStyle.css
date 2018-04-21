@@ -22,7 +22,7 @@ a{
 	color: #5BC0EB;
 	font-size: 3em;
 	border-bottom-style: solid;
-	text-transform: uppercase;
+	borrder-bottom-width: 1px;
 	text-align: center;
 	width: 100%;
 }

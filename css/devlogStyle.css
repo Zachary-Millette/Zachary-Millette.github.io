@@ -1,0 +1,14 @@
+html, body{
+	margin: 0;
+	overflow: visible;
+	background-color: #293232;
+	font-family: verdana;
+}
+
+body{
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-bottom: 5vh;
+	/*border-style: solid;
+	border-color:white;*/
+}

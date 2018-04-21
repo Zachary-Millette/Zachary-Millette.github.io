@@ -1,5 +1,6 @@
 //JavaScript file for the Games page
-
+//https://javascript.info/cross-window-communication
+var domain = 'https://zachary-millette.github.io/';
 
 //Default slide index for each slide-show
 var pbSI = 0;
@@ -10,6 +11,8 @@ var aonSI = 0;
 
 //When this page loads the following will execute
 window.onload = function(){
+	//console.log(window.parent);
+	window.parent.postMessage('games', 'domain');
 	//Initialize each slide-sshow by calling the respective function
 	showPBSlide(pbSI);
 	showPRSlide(prSI);
