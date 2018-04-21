@@ -1,6 +1,6 @@
 //JavaScript file for the Games page
 //https://javascript.info/cross-window-communication
-var domain = 'https://zachary-millette.github.io/';
+var domain = 'https://zachary-millette.github.io';
 
 //Default slide index for each slide-show
 var pbSI = 0;
