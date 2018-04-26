@@ -1,7 +1,10 @@
 //This is the JavaScript file for the Overlay
 
-//Open the home page onload
-window.onload = function(){document.getElementById("defaultOpen").click();}
+//Set the hometab to be active
+window.onload = function(){
+	document.getElementById("defaultOpen").className.replace(' active', "");
+	document.getElementById("defaultOpen").className += ' active';
+}
 
 //This is for other html pages to send messages to the index.html
 //This will allow the overlay to know when the iframe has loaded a new html
