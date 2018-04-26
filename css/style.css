@@ -16,7 +16,6 @@ html, body{
 	*/
 }
 
-
 .menu{
 	width: 100%;	/*Occupy the entire width of the screen*/
 	overflow: hidden;	/*Scrollbar should not appear if there is overflow*/
@@ -36,6 +35,8 @@ html, body{
 	/*Use margins to keep selections from being against the edge of the page*/
 	margin-left: 5vw;
 	margin-right: 5vw;
+	display: flex;
+	justify-content: center;
 }
 
 .menu button{

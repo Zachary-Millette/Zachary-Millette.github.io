@@ -7,6 +7,7 @@ var pbSI = 0;
 var prSI = 0;
 var ntSI = 0;
 var aonSI = 0;
+var ffSI = 0;
 
 
 //When this page loads the following will execute
@@ -18,6 +19,7 @@ window.onload = function(){
 	showPRSlide(prSI);
 	showNTSlide(ntSI);
 	showAONSlide(aonSI);
+	showFFSlide(ffSI);
 }
 
 
@@ -38,6 +40,10 @@ function plusSlides(n, name){
 	else if(name == 'aon'){
 		aonSI += n;
 		showAONSlide(aonSI);
+	}
+	else if(name == 'ff'){
+		ffSI += n;
+		showFFSlide(ffSI);
 	}
 }
 
@@ -149,7 +155,29 @@ function showAONSlide(n){
 }
 
 
-
+//FF Slides
+function showFFSlide(n){
+	var i, ffSlides, ffThumbs;
+	
+	ffSlides = document.getElementsByClassName('ffSlide');
+	ffThumbs = document.getElementsByClassName('ffThumb');
+	
+	if(n >= ffSlides.length){ffSI = 0;}
+	else if(n < 0){ffSI = ffSlides.length -1;}
+	else{ffSI = n;}
+	
+	for (i = 0; i < ffSlides.length; i++){
+		ffSlides[i].style.display = "none";
+	}
+	
+	for(i = 0; i < ffThumbs.length; i++){
+		ffThumbs[i].className = ffThumbs[i].className.replace(" currentSlide", "");
+	}
+	
+	ffSlides[ffSI].style.display = "block";
+	ffThumbs[ffSI].className += " currentSlide";
+	
+}
 
 
 
