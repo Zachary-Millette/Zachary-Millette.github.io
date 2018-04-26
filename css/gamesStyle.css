@@ -85,7 +85,7 @@ a.next{
 	border-bottom-color: #5BC0EB; /*Default*/
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-	width: 40vw;
+	width: 60vw;
 	margin: auto;
 	margin-bottom: 5vh;
 	margin-top: 20vh;
@@ -97,7 +97,7 @@ a.next{
 	border-bottom-color: #5BC0EB;	/*Default*/
 	border-top-style: solid;
 	border-bottom-style: solid;
-	width: 40vw;
+	width: 60vw;
 	margin: auto;
 	margin-bottom: 10vh;
 	text-align: justify;
@@ -106,8 +106,8 @@ a.next{
 /*Embeded Videos*/
 .vid{
 	margin: auto;
-	width: 40vw;
-	height: 22.5vw;
+	width: 60vw;
+	height: 35vw;
 	box-sizing: border-box;
 	overflow:hidden;
 }
@@ -115,7 +115,7 @@ a.next{
 
 /*This is the attributes of the div containing all elements of a slide*/
 .slideShow *{
-	width: 40vw;
+	width: 60vw;
 	box-sizing: border-box;
 	margin: auto;
 	position: relative;
