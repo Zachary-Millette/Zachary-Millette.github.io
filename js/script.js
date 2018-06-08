@@ -33,6 +33,11 @@ function frameLoad(event){
 			//get document by id .className += " active";
 			document.getElementById('gamesTab').className += ' active';
 			break;
+		case 'platformer':
+			//console.log('recieved: ' + event.data);
+			//get document by id .className += " active";
+			document.getElementById('platformerTab').className += ' active';
+			break;
 		case 'devlog':
 			//console.log('recieved: ' + event.data);
 			//get document by id .className += " active";
